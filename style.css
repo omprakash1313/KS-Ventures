@@ -4,11 +4,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: small;
+}
+body{
+  font-family: "Helvetica Neue", sans-serif;
+
 }
 
 body,
 input {
-  font-family: "Poppins", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 .container {
@@ -17,6 +22,7 @@ input {
   background-color: #fff;
   min-height: 100vh;
   overflow: hidden;
+  background-color: grey;
 }
 
 .forms-container {
@@ -61,8 +67,8 @@ form.sign-in-form {
 }
 
 .title {
-  font-size: 2.2rem;
-  color: #444;
+  font-size: 2rem;
+  color: #6f625A;
   margin-bottom: 1rem;
 }
 
@@ -77,26 +83,27 @@ form.sign-in-form {
   grid-template-columns: 15% 85%;
   padding: 0 0.4rem;
   position: relative;
+  color: #6f625A;
 }
 
 select{
   border: none;
-  color: #acacac;
+  color: #6f625A;
   font-size: 1.1rem;
   background-color: #f0f0f0;
-  color: #333;
+  color: #6f625A;
   max-width: 18.125rem;
 }
 
 option{
-  color: #333;
+  color: #6f625A;
 
 }
 
 .input-field i {
   text-align: center;
   line-height: 3.4rem;
-  color: #acacac;
+  color: #6f625A;
   transition: 0.5s;
   font-size: 1.1rem;
 }
@@ -108,11 +115,11 @@ option{
   line-height: 1;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #333;
+  color: #6f625A;;
 }
 
 .input-field input::placeholder {
-  color: #aaa;
+  color: #6f625A;;
   font-weight: 500;
 }
 
@@ -133,7 +140,8 @@ option{
   justify-content: center;
   align-items: center;
   margin: 0 0.45rem;
-  color: #333;
+  color: #6f625A;
+  background-color: rgb(185, 185, 185);
   border-radius: 50%;
   border: 0.0625rem solid #333;
   text-decoration: none;
@@ -144,26 +152,48 @@ option{
 .social-icon:hover {
   color: #b97847;
   border-color: #b97847;
+  background-color: rgb(242, 242, 242);
 }
 
 .btn {
   width: 9.375rem;
-  background-color: #594E45;
-  border: none;
+  color: #6f625A;
+   border-radius: 50%;
+  border: 0.0625rem solid #333;
+  background-color:rgb(185, 185, 185);
+  /* border: none; */
   outline: none;
   height: 3.069rem ;
   border-radius: 3.069rem;
-  color: #fff;
   text-transform: uppercase;
   font-weight: 600;
   margin: 0.625rem 0;
+  margin-left: -10rem;
   cursor: pointer;
   transition: 0.5s;
 }
 
 .btn:hover {
-  background-color: #b97847;
+  background-color:rgb(242, 242, 242);
+  color: #b97847;
+  border-color: #b97847;
 }
+.transparen{
+  position: absolute;
+  left: 67%;
+  /* margin-top: 20rem; */
+  top: 53.1%;
+  border: 0.0625rem solid #333;
+  background-color:rgb(185, 185, 185);
+  color: #6f625A;
+  height: 3.069rem ;
+}
+.transparen2{
+  position: absolute;
+ top: 78.3%;
+ left: 67%;
+}
+
 .panels-container {
   position: absolute;
   height: 100%;
@@ -182,7 +212,8 @@ option{
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #251308 0%, #f0bb9a 100%);
+  /* background-image: linear-gradient(-45deg, grey 0%, #b97847 50%); */
+  background-color: #b97847;
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
@@ -206,15 +237,18 @@ option{
 .left-panel {
   pointer-events: all;
   padding: 3rem 17% 2rem 12%;
+  text-align: left;
 }
 
 .right-panel {
+  text-align: left;
+  
   pointer-events: none;
   padding: 3rem 12% 2rem 17%;
 }
 
 .panel .content {
-  color: #fff;
+  color: #6f625A;
   transition: transform 0.9s ease-in-out;
   transition-delay: 0.6s;
 }
@@ -226,8 +260,9 @@ option{
 }
 
 .panel p {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   padding: 0.7rem 0;
+  padding-bottom: 2rem;
 }
 
 .btn.transparent {
@@ -309,7 +344,7 @@ option{
   .panel {
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: left; */
     padding: 2.5rem 8%;
     grid-column: 1 / 2;
   }
@@ -319,7 +354,7 @@ option{
   }
 
   .left-panel {
-    grid-row: 1 / 2;
+    grid-row: 1 / 3;
   }
 
   .image {
@@ -329,7 +364,7 @@ option{
   }
 
   .panel .content {
-    padding-right: 15%;
+    /* padding-right: 15%; */
     transition: transform 0.9s ease-in-out;
     transition-delay: 0.8s;
   }
@@ -340,7 +375,7 @@ option{
 
   .panel p {
     font-size: 0.7rem;
-    padding: 0.5rem 0;
+    /* padding: 0.5rem 0; */
   }
 
   .btn.transparent {
