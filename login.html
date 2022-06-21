@@ -2,69 +2,73 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css" />
-  <title>Sign in & Sign up Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign in & Sign up Form</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="forms-container">
-      <div class="signin-signup">
-        <form action="#" class="sign-in-form">
-          <h2 class="title">Log In</h2>
-          <div class="input-field">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" />
-          </div>
-          <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" />
-          </div>
-          <input type="submit" value="Login" class="btn solid"/>
-          <button class="btn transparen" id="sign-up-btn">
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="#" class="sign-in-form">
+                    <h2 class="title">Log In</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" />
+                    </div>
+                    <input type="submit" value="Login" class="btn solid" />
+                    <button class="btn transparen" id="sign-up-btn">
             Sign up
           </button>
-          <p class="social-text">- Or -</p>
-          <div class="social-media">
-            <a href="#" class="social-icon">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </form>
-        <form action="#" class="sign-up-form">
-          <h2 class="title">Sign up</h2>
-          <div class="input-field">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username"  required/>
-          </div>
-          <div class="input-field">
-            <i class="fas fa-envelope"></i>
-            <input type="email" placeholder="Email" required/>
-          </div>
-          <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" required/>
-          </div>
-          <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Re-Enter Password" required/>
-          </div>
+                    <p class="social-text">- Or -</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
 
-          <div class="input-field">
-            <i class="fas fa-pen"></i>
-            <select name="role" id="role" required>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-apple"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="#" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Full Name" required/>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" required/>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required/>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Re-Enter Password" required/>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-pen"></i>
+                        <select name="role" id="role" required>
               <option value="select">Select</option>
               <option value="investor">Investor</option>
               <option value="lender">Lender</option>
@@ -81,85 +85,76 @@
               <option value="NoneOfTheAbove">None Of The Above</option>
               
             </select>
-          
-          </div>
-          <div class="input-field">
-            <i class="fas fa-user-edit"></i>
-            <input type="nota" placeholder="If Nota Is Selected Please Specify" />
-          </div>
-          <div class="input-field">
-            <i class="fab fa-linkedin"></i>
-            <input type="url" placeholder="Enter Your Linkedin Url" required/>
-          </div>
-          <input type="submit" class="btn" value="Sign up" />
-          <button class="btn transparen2" id="sign-in-btn">
-            Login in
+
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-user-edit"></i>
+                        <input type="nota" placeholder="Please Specify Your Role" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fab fa-linkedin"></i>
+                        <input type="url" placeholder="Enter Your Linkedin Url" required/>
+                    </div>
+                    <div class="tickbox">
+                        <input id="checkbox" type="checkbox" required/>
+                        <label for="checkbox"> I agree to these <a class="tnc-color"href="#">Terms and Conditions</a>.</label>
+
+                    </div>
+                    <input type="submit" class="btn" value="Sign up" />
+                    <button class="btn transparen2" id="sign-in-btn">
+            Login 
           </button>
-          <p class="social-text">- Or -</p>
-          <div class="social-media">
-            <a href="#" class="social-icon">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </form>
-      </div>
+                    <p class="social-text">- Or -</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-apple"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content text-left">
+                    <!-- <h3>New here ?</h3> -->
+                    <p class="text-left"> We raise Capital for Private Sector, Government, NGO, NonProfit, Trust, Foundation, Society, Charity, SDG based, ESG Impact based and all positive contribution projects and businesses. All sectors and stages.
+                        <br><br> We at KS Ventures do not charge any upfront fees, some of our Lenders do and some don’t, we will provide you with many options to select from. We may also cover advance costs of our Lenders for you.
+                        <br><br> We have complete turn key solutions and support services for our clients seeking funding </p>
+
+                </div>
+                <img src="img/log.svg" class="image" alt="" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <!-- <h3>One of us ?</h3> -->
+                    <p class="text-left">
+                        We raise Capital for Private Sector, Government, NGO, NonProfit, Trust, Foundation, Society, Charity, SDG based, ESG Impact based and all positive contribution projects and businesses. All sectors and stages.
+
+                        <br><br> We at KS Venture do not charge any upfront fees, some of our Lenders do and some don’t, we will provide you with many options to select from. We may also cover advance costs of our Lenders for you.
+                        <br><br> We have complete turn key solutions and support services for our clients seeking funding
+                        <br>
+                    </p>
+
+                </div>
+                <img src="img/register.svg" class="image" alt="" />
+            </div>
+        </div>
     </div>
 
-    <div class="panels-container">
-      <div class="panel left-panel">
-        <div class="content text-left">
-          <!-- <h3>New here ?</h3> -->
-          <p class="text-left">
-          • We at KS Venture do not charge any upfront fees, some of our Lenders do
-and some don’t, we will provide you with many options to select from. We
-may also cover advance costs of our Lenders for you.
-<br>
-<br>
-• We have complete turn key solutions and support services for our clients
-seeking funding
-<br>
-<br>
-          • We raise Capital for Private Sector, Government, NGO, NonProfit, Trust,
-Foundation, Society, Charity, SDG based, ESG Impact based and all positive
-contribution projects and businesses. All sectors and stages.
-          </p>
-          
-        </div>
-        <img src="img/log.svg" class="image" alt="" />
-      </div>
-      <div class="panel right-panel">
-        <div class="content">
-          <!-- <h3>One of us ?</h3> -->
-          <p class="text-left">
-            • We at KS Venture do not charge any upfront fees, some of our Lenders do
-and some don’t, we will provide you with many options to select from. We
-may also cover advance costs of our Lenders for you.
-<br>
-<br>
-• We have complete turn key solutions and support services for our clients
-seeking funding
-<br><br>
-          • We raise Capital for Private Sector, Government, NGO, NonProfit, Trust,
-Foundation, Society, Charity, SDG based, ESG Impact based and all positive
-contribution projects and businesses. All sectors and stages.
-          </p>
-          
-        </div>
-        <img src="img/register.svg" class="image" alt="" />
-      </div>
-    </div>
-  </div>
-
-  <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
